@@ -13,22 +13,24 @@
  */
 .bg1{
 	height: 100%; 
-    background: url(landing_1.jpg)no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;}
+    background: url(landing_1.jpg)no-repeat center center fixed #494949;
+          -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+}
 
 .bg2{
 	height: 100%; 
-    background: url(landing_2.jpg)no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    background: url(landing_2.jpg)no-repeat center center fixed #494949;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
 }
 
 html,body{
+	overflow: hidden;
 	height: 100%;	
 }
 .slides {
