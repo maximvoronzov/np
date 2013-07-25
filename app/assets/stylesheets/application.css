@@ -12,11 +12,32 @@
  *= require_tree .
  */
 .bg1{
-	height: 46.3em; 
-    background-image: url(slide-01.jpg);
-   }
+	height: 100%; 
+    background: url(slide-01.jpg)no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;}
 
 .bg2{
-	height: 46.3em; 
-    background-image: url(slide-02.jpg);
+	height: 100%; 
+    background: url(slide-02.jpg)no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+html,body{
+	height: 100%;	
+}
+.slides {
+	height: 100%;
+}
+.flexslider {
+	height: 100%;
+}
+.navbar-bottom{
+bottom: 0;
+position : absolute;
 }
