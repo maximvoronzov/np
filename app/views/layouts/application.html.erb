@@ -8,18 +8,20 @@
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function() {
     $('.flexslider').flexslider({
-    animation: "fade"
+    animation: "fade",
+    controlNav: false,
+    animationSpeed: 900,
+    slideshowSpeed: 5000
   });
   });
 </script>
 	</head>
 	<body>
 		<%= yield %>
-		<div class="nav navbar-fixed-bottom">
-			<ul>
+			<ul class="navbar-fixed-bottom">
 				<li><%= link_to "home" , static_pages_home_path  %></li>
 				<li><%= link_to "about" , static_pages_about_path  %></li>
 			</ul>
-		</div>
+		
 	</body>
 </html>
