@@ -32,6 +32,8 @@
 html,body{
 	overflow: hidden;
 	height: 100%;	
+    border: 0;
+    margin: 0;
 }
 .slides {
 	height: 100%;
@@ -42,4 +44,52 @@ html,body{
 .navbar-bottom{
 bottom: 0;
 position : absolute;
+}
+body{
+
+font: 12px/135% 'Century Gothic',verdana,arial,helvetica,sans-serif;
+color: #858585;
+
+}
+.bottom-nav:before {
+display: block;
+content: '';
+position: absolute;
+bottom: 60px;
+left: 45px;
+background: url(/assets/nathan-logo.png) top left no-repeat;
+height: 50px;
+width: 92px;
+background-size: 100%;
+}
+.landing .bottom-nav ul {
+height: 47px;
+line-height: 47px;
+margin: 0;
+padding: 0;
+border: none;
+text-align: center;
+}
+.landing .bottom-nav-bg {
+display: block;
+position: absolute;
+bottom: 0;
+margin-left: -20px;
+height: 47px;
+width: 100%;
+background-color: #494949;
+opacity: .5;
+}
+.bottom-nav ul li {
+display: inline-block;
+padding: 0 10px 3px;
+}
+li {
+line-height: 20px;
+display: list-item;
+text-align: -webkit-match-parent;
+}
+.bottom-nav ul {
+font-size: 12px;
+line-height: 12px;
 }
