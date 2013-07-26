@@ -41,9 +41,20 @@ html,body{
 .flexslider {
 	height: 100%;
 }
-.navbar-bottom{
+.bottom-nav{
 bottom: 0;
 position : absolute;
+text-align: center;
+width: 100%;
+left: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+text-decoration: none;
+font-weight: bold;
 }
 body{
 
@@ -67,14 +78,14 @@ height: 47px;
 line-height: 47px;
 margin: 0;
 padding: 0;
-border: none;
+border: 0;
 text-align: center;
+background-color: transparent;
 }
 .landing .bottom-nav-bg {
 display: block;
 position: absolute;
 bottom: 0;
-margin-left: -20px;
 height: 47px;
 width: 100%;
 background-color: #494949;
@@ -85,11 +96,10 @@ display: inline-block;
 padding: 0 10px 3px;
 }
 li {
-line-height: 20px;
-display: list-item;
-text-align: -webkit-match-parent;
+line-height: 20px
 }
 .bottom-nav ul {
 font-size: 12px;
 line-height: 12px;
+padding: 0;
 }
