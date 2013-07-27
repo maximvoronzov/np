@@ -41,7 +41,7 @@ html,body{
 .flexslider {
 	height: 100%;
 }
-.bottom-nav{
+.bottom-nav-home{
 bottom: 0;
 position : absolute;
 text-align: center;
@@ -55,6 +55,17 @@ a {
 a:hover {
 text-decoration: none;
 font-weight: bold;
+    color: white;
+
+}
+.bottom-nav-about a{
+     text-decoration: none;
+    color: #333;
+}
+.bottom-nav-about a:hover{
+     text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 body{
 
@@ -65,7 +76,7 @@ color: #858585;
 .bg {
     background-color: #484848;
 }
-.bottom-nav:before {
+.bottom-nav-home:before {
 display: block;
 content: '';
 position: absolute;
@@ -76,15 +87,7 @@ height: 50px;
 width: 92px;
 background-size: 100%;
 }
-.landing .bottom-nav ul {
-height: 47px;
-line-height: 47px;
-margin: 0;
-padding: 0;
-border: 0;
-text-align: center;
-background-color: transparent;
-}
+
 .bottom-nav-bg {
 display: block;
 position: absolute;
@@ -94,15 +97,76 @@ width: 100%;
 background-color: #494949;
 opacity: .5;
 }
-.bottom-nav ul li {
+.bottom-nav-home ul li {
 display: inline-block;
 padding: 0 10px 3px;
 }
 li {
 line-height: 20px
 }
-.bottom-nav ul {
+.bottom-nav-home ul {
 font-size: 12px;
 line-height: 12px;
 padding: 0;
+}
+.container{
+border: 20px solid #494949;
+bottom: 0;
+position: absolute;
+top: 0;
+}
+.row{
+    margin-left: 210px;
+    margin-top: 9%;
+    width:50%;
+    font-size: 13px;
+    height: 50%;
+    font-family: Helvetica ;
+}
+
+.row:before {
+display: block;
+content: '';
+position: absolute;
+bottom: 100px;
+right: 324px;
+background: url(/assets/paul.jpg) top left no-repeat;
+height: 420px;
+width: 110px;
+background-size: 100%;
+}
+.bottom-nav-about:before {
+display: block;
+content: '';
+position: absolute;
+bottom: 60px;
+left: 45px;
+background: url(/assets/nathan-logo.png) top left no-repeat;
+height: 50px;
+width: 92px;
+background-size: 100%;
+}
+.bottom-nav-about{
+bottom: 0;
+position : absolute;
+width: 100%;
+left: 0;
+}
+.bottom-nav-about ul {
+margin: 0 20px;
+padding: 0 0 10px;
+border-top: 1px solid #f1f1f1;
+font-size: 12px;
+line-height: 12px;
+
+}
+.bottom-nav-about ul li {
+display: inline-block;
+padding: 0 10px 3px;
+}
+.bold{
+    font-weight: bold;
+}
+.selected{
+    background-color: #f1f1f1;
 }
