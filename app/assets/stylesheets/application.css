@@ -28,9 +28,10 @@
         -o-background-size: contain;
         background-size: contain;
 }
-
+.hiddenoverflow{
+        overflow: hidden;
+}
 html,body{
-	overflow: hidden;
 	height: 100%;	
     border: 0;
     margin: 0;
@@ -109,28 +110,29 @@ font-size: 12px;
 line-height: 12px;
 padding: 0;
 }
+.wrap{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
 .container{
 border: 20px solid #494949;
-bottom: 0;
-position: absolute;
-top: 0;
+height: 100%;
+display: table;
+position: relative;
 }
 .row{
-    margin-left: 210px;
+    margin-left: 17%;
     margin-top: 9%;
-    width:50%;
-    font-size: 13px;
-    height: 50%;
-    font-family: Helvetica ;
+    width:60%;
+    position: relative;
 }
 
-.row:before {
-display: block;
-content: '';
+.photo {
 position: absolute;
-bottom: 100px;
-right: 310px;
-background: url(/assets/paul.jpg) top left no-repeat;
+top:0;
+right: 0;
+background: url(/assets/paul.jpg) no-repeat;
 height: 420px;
 width: 110px;
 background-size: 100%;
@@ -148,7 +150,7 @@ background-size: 100%;
 }
 .bottom-nav-about{
 bottom: 0;
-position : absolute;
+position: absolute;
 width: 100%;
 left: 0;
 }
@@ -169,4 +171,14 @@ padding: 0 10px 3px;
 }
 .selected{
     background-color: #f1f1f1;
+}
+.backphoto{
+
+}
+
+.row p {
+margin-right: 120px;
+font-size: 13px;
+line-height: 150%;
+margin-bottom: 10px;
 }
