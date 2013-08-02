@@ -42,12 +42,20 @@ html,body{
 .flexslider {
 	height: 100%;
 }
+
+.bottom-nav-about{
+bottom: 0;
+position : absolute;
+width: 100%;
+left: 0;
+}
+
 .bottom-nav-home{
 bottom: 0;
 position : absolute;
-text-align: center;
 width: 100%;
 left: 0;
+text-align: center;
 }
 a {
     text-decoration: none;
@@ -77,6 +85,17 @@ color: #858585;
 .bg {
     background-color: #484848;
 }
+.bottom-nav-about:before {
+display: block;
+content: '';
+position: absolute;
+bottom: 60px;
+left: 45px;
+background: url(/assets/nathan-logo.png) top left no-repeat;
+height: 50px;
+width: 92px;
+background-size: 100%;
+}
 .bottom-nav-home:before {
 display: block;
 content: '';
@@ -88,7 +107,6 @@ height: 50px;
 width: 92px;
 background-size: 100%;
 }
-
 .bottom-nav-bg {
 display: block;
 position: absolute;
@@ -110,49 +128,37 @@ font-size: 12px;
 line-height: 12px;
 padding: 0;
 }
+.tabledis
+{   width: 100%;
+    height: 100%;
+    display: table;
+}
 .wrap{
     width: 100%;
     height: 100%;
-    bottom: 0;
+    display: table-row;
 }
 .container{
-border: 20px solid #494949;
-height: 100%;
-display: table;
 position: relative;
+height: 100%;
+width: 100%;
+border: 20px solid #494949;
+display: table-cell;
+vertical-align: middle;
 }
 .row{
     margin-left: 17%;
-    margin-top: 9%;
     width:60%;
     position: relative;
+    background: url(/assets/paul.jpg) 100% center no-repeat;
+    min-height: 400px;
+    box-sizing:border-box;
+    moz-box-sizing:border-box;
+    display: block;
+    float: left;
 }
+.about{
 
-.photo {
-position: absolute;
-top:0;
-right: 0;
-background: url(/assets/paul.jpg) no-repeat;
-height: 420px;
-width: 110px;
-background-size: 100%;
-}
-.bottom-nav-about:before {
-display: block;
-content: '';
-position: absolute;
-bottom: 60px;
-left: 45px;
-background: url(/assets/nathan-logo.png) top left no-repeat;
-height: 50px;
-width: 92px;
-background-size: 100%;
-}
-.bottom-nav-about{
-bottom: 0;
-position: absolute;
-width: 100%;
-left: 0;
 }
 .bottom-nav-about ul {
 margin: 0 20px;
@@ -162,7 +168,7 @@ font-size: 12px;
 line-height: 12px;
 
 }
-.bottom-nav-about ul li {
+ .bottom-nav-about ul li {
 display: inline-block;
 padding: 0 10px 3px;
 }
@@ -172,13 +178,13 @@ padding: 0 10px 3px;
 .selected{
     background-color: #f1f1f1;
 }
-.backphoto{
-
-}
-
 .row p {
 margin-right: 120px;
 font-size: 13px;
 line-height: 150%;
 margin-bottom: 10px;
+}
+div
+{
+    display: block;
 }
